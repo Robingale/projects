@@ -42,5 +42,14 @@ if characters == 9:
     print("**** ", text, " ***")
     print("********************")
 
+if characters == 10:
+    print("********************")
+    print("*** ", text, " ***")
+    print("********************")
+
+if characters == 11:
+    print("********************")
+    print("*** ", text, " **")
+    print("********************")
 
 
