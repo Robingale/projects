@@ -1,0 +1,7 @@
+sentence = input("write a sentence and I'll tell you it's average word length: ")
+list = sentence.split()
+words = len(list)
+joined = sentence.replace(" ","")
+letters = len(joined)
+average = letters/words
+print(f"the average word length is {average}")
