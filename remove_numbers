@@ -1,0 +1,26 @@
+#Write a function that:
+#Accepts a string as a parameter
+#Returns a string with all numeric values removed
+
+#remove_numbers(“a1b2c3”) → “abc”
+
+def remove_numbers():
+    text = input("Enter the string you'd like me to process: ")
+    characters = len(text)
+    #print(len(text))
+    my_list = list(text)
+    new_list = []
+    numbers = [str(1), str(2), str(3), str(4), str(5), str(6), str(7), str(8), str(9), str(0)]
+
+    for i in range(characters):
+        if my_list[i] not in numbers:
+            new_list.append(my_list[i])
+        
+    
+    new_text = "".join(new_list)
+    print(new_text)
+
+
+remove_numbers()
+
+
