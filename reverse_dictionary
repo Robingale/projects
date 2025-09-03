@@ -1,0 +1,22 @@
+
+
+birth_year = {
+ 'Ivanna': 2021,
+ 'Nico': 2020,
+ 'Zissel': 2019,
+ 'Emma': 2019,
+ 'Holy': 2018,
+ 'Italia': 2017,
+ 'Juan': 2016
+}
+
+def reverse(original):
+    reversed = {}
+    for key in original:
+        value = original[key]
+        if value not in reversed:
+            reversed[value] = []
+        reversed[value].append(key)
+    return reversed
+
+print(reverse(birth_year))
